@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  TicTacToe
 //
-//  Created by admin on 24/11/2021.
+//  Created by Doaa Albishri on 24/11/2021.
 //
 
 import UIKit
@@ -130,7 +130,11 @@ class ViewController: UIViewController {
      func gameOver(player: Int){
         if(player>0){
             winnerLabel.isHidden = false
-            winnerLabel.text = "Player \(player) Wins!"
+            if(player==1){
+            winnerLabel.text = "Congrats Blue Won!"
+            }else{
+            winnerLabel.text = "Congrats Red Won!"
+            }
         }else{
             winnerLabel.isHidden = false
             winnerLabel.text = "Draw"
